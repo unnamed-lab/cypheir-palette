@@ -23,5 +23,23 @@
     "tailwindcss": "^3.3.0",
     "eslint": "^8",
     "eslint-config-next": "14.1.4"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "postcss.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unnamed-lab/cypheir-palette.git"
+  },
+  "keywords": [
+    "cypheir",
+    "colour",
+    "palette",
+    "nextjs"
+  ],
+  "author": "Anuoluwa S. Adebayo (Unnamed)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/unnamed-lab/cypheir-palette/issues"
+  },
+  "homepage": "https://github.com/unnamed-lab/cypheir-palette#readme"
 }
