@@ -630,4 +630,64 @@
   display: block;
 }
 
+.error {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: -webkit-fill-available;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(-200deg, #fff, #f8f9fa, #ced4da, #1ca7ec);
+}
+.error .error_container {
+  display: grid;
+  grid-template-columns: 1fr 1.125fr;
+  width: 60%;
+  gap: 2rem;
+}
+@media (max-width: 767px) {
+  .error .error_container {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+}
+.error .error_container .error_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.error .error_container .error_item h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+.error .error_container .error_item p {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+.error .error_container .error_item a {
+  color: #1ca7ec;
+}
+.error .error_container .error_item a:hover, .error .error_container .error_item a:focus {
+  color: #88d6fd;
+}
+
+:root ::-webkit-scrollbar {
+  width: 4px;
+}
+:root ::-webkit-scrollbar-thumb {
+  background: #1ca7ec;
+}
+:root ::-webkit-scrollbar-thumb:hover {
+  background: #88d6fd;
+}
+:root ::-webkit-scrollbar-track {
+  background: #f8f9fa;
+}
+
 /*# sourceMappingURL=globals.css.map */

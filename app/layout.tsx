@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
+// import "./globals.css";
 
 import "../styles/css/globals.css";
 import xLogo from "../assets/icons/x.svg";
@@ -9,6 +9,7 @@ import globe from "../assets/icons/globe.svg";
 import discord from "../assets/icons/discord.svg";
 import thumbnail from "../assets/img/seoThumb.png";
 import Image from "next/image";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -85,6 +86,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Head>
+          <link rel="icon" href="/favicon.ico" sizes="any" />
+          <link
+            rel="icon"
+            href="/icon?<generated>"
+            type="image/<generated>"
+            sizes="<generated>"
+          />
+          <link
+            rel="apple-touch-icon"
+            href="/apple-icon?<generated>"
+            type="image/<generated>"
+            sizes="<generated>"
+          />
+        </Head>
         {children}
         <Footer />
       </body>
