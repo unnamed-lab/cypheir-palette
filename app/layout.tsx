@@ -47,6 +47,21 @@ const webData = {
     },
   },
   creator: "@unnamedcodes",
+  keywords: [
+    "cypheir",
+    "cypheir creative",
+    "nextjs",
+    "developers",
+    "cypher",
+    "cipher",
+    "unnamed",
+    "color",
+    "colour",
+    "palette",
+    "colour palette",
+    "colour palatte",
+    "cypheir-color-scheme",
+  ],
 };
 
 export const metadata: Metadata = {
@@ -57,14 +72,13 @@ export const metadata: Metadata = {
     description: webData.desc,
     url: webData.url,
     siteName: webData.siteName,
-    images: 
-      {
-        url: webData.img.url,
-        alt: webData.img.alt,
-        width: webData.img.width,
-        height: webData.img.height,
-      },
-    
+    images: {
+      url: webData.img.url,
+      alt: webData.img.alt,
+      width: webData.img.width,
+      height: webData.img.height,
+    },
+
     locale: "en_UK",
     type: "website",
   },
@@ -76,6 +90,7 @@ export const metadata: Metadata = {
     creator: webData.creator,
     images: webData.img, // Must be an absolute URL
   },
+  keywords: webData.keywords,
 };
 
 export default function RootLayout({
