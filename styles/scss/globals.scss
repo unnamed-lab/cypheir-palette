@@ -1,3 +1,5 @@
+@use "./tailwind";
+
 @use "./components/animation";
 @use "./components/buttons";
 @use "./components/forms";
@@ -5,4 +7,4 @@
 @use "./components/typography";
 
 @use "./layouts/footer";
-@use "./layouts/navbar"
+@use "./layouts/navbar";
